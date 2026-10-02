@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://cgj8d3g8v0pu8"]
+
+[ext_resource type="Script" uid="uid://bmv4kfdf3iqrc" path="res://scripts/jogo.gd" id="1_k46e6"]
+
+[node name="Jogo" type="Node2D" unique_id=190353626]
+script = ExtResource("1_k46e6")
+
+[node name="Fundo" type="ColorRect" parent="." unique_id=1276751598]
+offset_right = 1150.0
+offset_bottom = 641.0
+color = Color(0.001659625, 0.001659625, 0.001659625, 1)
+
+[node name="VelasContainer" type="HBoxContainer" parent="." unique_id=1105217615]
+offset_left = 53.0
+offset_top = 136.0
+offset_right = 1107.0
+offset_bottom = 473.0
+theme_override_constants/separation = 10
+alignment = 1
+
+[node name="Mensagem" type="Label" parent="." unique_id=421851152]
+offset_left = 52.0
+offset_top = 38.0
+offset_right = 1096.0
+offset_bottom = 114.0
+horizontal_alignment = 1
+
+[node name="BotoesContainer" type="HBoxContainer" parent="." unique_id=1033734955]
+offset_left = 101.0
+offset_top = 489.0
+offset_right = 1064.0
+offset_bottom = 566.0
+theme_override_constants/separation = 15
+alignment = 1
+
+[node name="Btn1" type="Button" parent="BotoesContainer" unique_id=1955058535]
+layout_mode = 2
+text = "Apagar 1"
+
+[node name="Btn2" type="Button" parent="BotoesContainer" unique_id=1243395963]
+layout_mode = 2
+text = "Apagar 2"
+
+[node name="Btn3" type="Button" parent="BotoesContainer" unique_id=1743201951]
+layout_mode = 2
+text = "Apagar 3"
+
+[node name="BtnReiniciar" type="Button" parent="BotoesContainer" unique_id=1050323177]
+layout_mode = 2
+text = "Tentar Novamente"
